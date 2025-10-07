@@ -7,7 +7,7 @@ const Navbar = () => {
   const links = ["Home", "Apps", "Installation"];
 
   return (
-    <div className="navbar bg-base-100 shadow-sm max-w-[1200px] mx-auto sticky top-0 z-50">
+    <div className="navbar bg-base-100  max-w-[1300px] mx-auto sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
