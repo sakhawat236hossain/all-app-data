@@ -11,12 +11,15 @@ const router = createBrowserRouter([
     path: "/",
     Component: Root,
     errorElement:<ErrorPage></ErrorPage>,
+         
     children:[
         {
            index:true,
-           path:"/",
+           loader: ()=>fetch('/AppData.json'),
+            path:"/",
            Component:Home,
         },
+        
     ]
   },
 ]);

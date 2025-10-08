@@ -1,11 +1,11 @@
-import './App.css'
+import React from 'react';
 
-function App() {
+const App = () => {
   return (
-    <>
-     sddddddddddd
-    </>
+    <div>
+      
+    </div>
   );
-}
+};
 
 export default App;

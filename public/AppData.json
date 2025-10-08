@@ -1,0 +1,345 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/C5mS78xn/spotify-logo-png-seeklogo-408560.png",
+    "title": "Spotify",
+    "companyName": "Spotify Ltd.",
+    "description": "Spotify is a leading music streaming app that offers millions of songs, podcasts, and playlists from around the world. Users can create personalized playlists, discover new artists, and download tracks for offline listening. With seamless device syncing, Spotify ensures your music is always with you.",
+    "size": 120,
+    "reviews": 5400000,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 4200000 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/t7QJD0F/9882113.jpg",
+    "title": "Instagram",
+    "companyName": "Meta Platforms",
+    "description": "Instagram lets users share photos, reels, and stories while connecting with friends and favorite creators. With filters, hashtags, and direct messaging, it’s a powerful tool for personal expression and digital marketing. Explore reels or go live — Instagram keeps you visually connected.",
+    "size": 150,
+    "reviews": 9800000,
+    "ratingAvg": 4.6,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1000000 },
+      { "name": "5 star", "count": 8000000 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/8DTv0X63/pngtree-twitter-free-button-png-image-image-1144413.jpg",
+    "title": "X (Twitter)",
+    "companyName": "X Corp",
+    "description": "Twitter (now X) is a microblogging platform where users share updates, news, and opinions in real time. It’s a hub for trending topics, public discussions, and quick updates from global events. With spaces and subscriptions, Twitter helps users build communities and brands.",
+    "size": 95,
+    "reviews": 3100000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 130000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 2200000 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/vCtdgP24/images.jpg",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "description": "Telegram is a privacy-focused messaging app that offers fast and secure communication. It allows large group chats, media sharing, and bots for automation. With features like channels and cloud sync, Telegram is perfect for both casual users and professionals.",
+    "size": 85,
+    "reviews": 2300000,
+    "ratingAvg": 4.8,
+    "downloads": 800000000,
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 1800000 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co.com/q3mXTwNy/images.png",
+    "title": "Notion",
+    "companyName": "Notion Labs",
+    "description": "Notion is an all-in-one workspace for notes, projects, and productivity. Users can create databases, wikis, and to-do lists while collaborating in real time. With templates and integrations, Notion adapts to personal workflows and helps teams stay organized efficiently.",
+    "size": 60,
+    "reviews": 870000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 12000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 150000 },
+      { "name": "5 star", "count": 700000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/gbv6hJjQ/canva-icon.webp",
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd",
+    "description": "Canva is a user-friendly design platform that helps anyone create stunning visuals for social media, presentations, and business. With thousands of templates, fonts, and tools, it’s a go-to solution for non-designers to produce professional-quality graphics easily.",
+    "size": 110,
+    "reviews": 2500000,
+    "ratingAvg": 4.8,
+    "downloads": 200000000,
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1900000 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co.com/b5Byg6wg/social-media-zoom-realistic-icon-free-free-png.webp",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "description": "Zoom is a popular video conferencing tool trusted by millions for meetings, webinars, and collaboration. It offers HD video, screen sharing, and chat options for both individuals and enterprises. Zoom keeps remote teams connected efficiently and securely.",
+    "size": 140,
+    "reviews": 1900000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1100000 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co.com/VpxdGs0q/duolingo-logo-png-seeklogo-458347.png",
+    "title": "Duolingo",
+    "companyName": "Duolingo Inc.",
+    "description": "Duolingo makes learning a new language fun and interactive. With bite-sized lessons, quizzes, and gamified challenges, users can practice speaking, reading, and listening skills. It supports 30+ languages and tracks your progress daily to keep you consistent.",
+    "size": 90,
+    "reviews": 1500000,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 1100000 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co.com/ccPh05M9/whatsapp-logo-icon-isolated-on-transparent-background-free-png.webp",
+    "title": "WhatsApp",
+    "companyName": "Meta Platforms",
+    "description": "WhatsApp provides fast and secure messaging, voice, and video calls globally. With end-to-end encryption, users can chat privately, share files, and create groups. WhatsApp Web also lets you continue conversations seamlessly across multiple devices.",
+    "size": 95,
+    "reviews": 8000000,
+    "ratingAvg": 4.7,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 6400000 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co.com/PZvdNvm0/images-1.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "description": "YouTube is the world’s biggest video-sharing platform where anyone can upload, watch, and share videos. It includes music, tutorials, news, and entertainment content. With YouTube Premium, users can enjoy ad-free streaming and offline playback anytime.",
+    "size": 220,
+    "reviews": 12000000,
+    "ratingAvg": 4.6,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 250000 },
+      { "name": "2 star", "count": 400000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 9500000 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co.com/R4CkVSm1/images-2.png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms",
+    "description": "Facebook is a social networking platform that connects people across the globe. Users can share updates, photos, videos, and stories. It also supports groups, events, and marketplace for community interactions. Facebook helps individuals and businesses stay connected and informed.",
+    "size": 180,
+    "reviews": 9500000,
+    "ratingAvg": 4.4,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 7000000 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co.com/tpJbfqpM/slack-hash-256.png",
+    "title": "Slack",
+    "companyName": "Slack Technologies",
+    "description": "Slack is a messaging app for teams that streamlines communication and collaboration. Users can create channels, share files, integrate apps, and conduct video calls. It centralizes all work conversations in one place, boosting productivity and keeping remote teams connected effortlessly.",
+    "size": 130,
+    "reviews": 650000,
+    "ratingAvg": 4.7,
+    "downloads": 150000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 500000 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://i.ibb.co.com/LzHrMfrR/png-transparent-netflix-thumbnail.png",
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "description": "Netflix is a streaming service that offers thousands of movies, TV shows, and documentaries. Users can watch content online, download for offline viewing, and create personalized watchlists. Netflix uses AI recommendations to suggest shows based on viewing history and preferences.",
+    "size": 200,
+    "reviews": 8800000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 7000000 }
+    ]
+  },
+ 
+  {
+    "id": 15,
+    "image": "https://i.ibb.co.com/wrRPWGVf/images-3.png",
+    "title": "Airbnb",
+    "companyName": "Airbnb Inc.",
+    "description": "Airbnb allows users to book accommodations and experiences worldwide. Hosts can list properties, and travelers can find unique stays, local experiences, and activities. The app ensures secure booking, reviews, and communication, making travel planning simple, flexible, and reliable.",
+    "size": 145,
+    "reviews": 2100000,
+    "ratingAvg": 4.6,
+    "downloads": 200000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 1700000 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://i.ibb.co.com/j9dLKN4L/tiktok-logo-tiktok-logo-transparent-tiktok-icon-transparent-free-free-png.webp",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "description": "TikTok is a short-video social platform where users create, share, and watch videos with music, effects, and filters. The app provides personalized feeds, viral trends, and tools for creative expression. TikTok is a hub for entertainment, social interaction, and discovering global talent.",
+    "size": 100,
+    "reviews": 10000000,
+    "ratingAvg": 4.7,
+    "downloads": 2000000000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 8700000 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://i.ibb.co.com/7NVLz4Br/images-1.jpg",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "description": "Google Drive is a cloud storage service that allows users to store, share, and collaborate on files online. It supports documents, spreadsheets, slides, and media files. With real-time collaboration and offline access, Google Drive ensures productivity and secure data management for individuals and teams.",
+    "size": 150,
+    "reviews": 4200000,
+    "ratingAvg": 4.8,
+    "downloads": 1500000000,
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 3800000 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co.com/Cp7CwV8q/images.webp",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft",
+    "description": "Microsoft Teams is a collaboration app for workplace communication. Users can chat, video call, share files, and integrate third-party apps. Teams provides channels, meetings, and task management tools for smooth team coordination and efficient project execution in any organization.",
+    "size": 200,
+    "reviews": 1500000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 1400000 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://i.ibb.co.com/TD3MGwyX/adobe-photoshop-logo-square-rounded-photoshop-logo-photoshop-logo-free-download-free-png.webp",
+    "title": "Adobe Photoshop",
+    "companyName": "Adobe Inc.",
+    "description": "Adobe Photoshop is the industry-leading software for photo editing and digital design. Users can manipulate images, create graphics, and enhance visuals with professional tools. Photoshop supports layers, filters, and plugins to produce stunning artwork for both web and print.",
+    "size": 400,
+    "reviews": 2200000,
+    "ratingAvg": 4.9,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1750000 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://i.ibb.co.com/LdKYQwPZ/adobe-photoshop-logo-square-rounded-photoshop-logo-photoshop-logo-free-download-free-png.webp",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "description": "Google Maps provides navigation, live traffic updates, and route planning worldwide. Users can explore streets, discover places, and get turn-by-turn directions. With offline maps and business information, it’s essential for travelers, commuters, and anyone navigating a new city.",
+    "size": 180,
+    "reviews": 8800000,
+    "ratingAvg": 4.8,
+    "downloads": 2000000000,
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 7800000 }
+    ]
+  }
+]
