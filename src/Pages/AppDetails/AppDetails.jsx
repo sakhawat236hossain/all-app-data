@@ -4,6 +4,7 @@ import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png"; 
 import { toast, ToastContainer } from 'react-toastify';
+import AppDetailsError from '../ErrorPage/AppDetailsError';
 
 const AppDetails = () => {
     const { id } = useParams(); 
@@ -14,7 +15,7 @@ const AppDetails = () => {
     const singleApp = appData.find(app => app.id === appId);
     
    
-
+  if (!singleApp) return <AppDetailsError></AppDetailsError>;
     
 
     const { image, title, companyName, description, size, reviews, downloads, ratings } = singleApp;
