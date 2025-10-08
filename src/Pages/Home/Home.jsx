@@ -14,7 +14,7 @@ const Home = () => {
       <Apps appData={appData}></Apps>
 
       <div className="flex items-center justify-center mb-3">
-        <Link to="/All Apps Page" className="btn btn-active btn-primary">
+        <Link to="/all-apps-page" className="btn btn-active btn-primary">
           Show All
         </Link>
       </div>

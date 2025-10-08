@@ -2,6 +2,7 @@ import React from "react";
 import BannerImg from "../assets/hero.png";
 import AppStore from "../assets/App Store.png";
 import GooglePlay from "../assets/Google Play.png";
+import { ArrowDownToLine, Star } from "lucide-react";
 
 const Banner = () => {
   return (
@@ -69,14 +70,14 @@ const Banner = () => {
     {/* Total Downloads */}
     <div className="flex flex-col items-center">
       <h3 className="text-lg lg:text-xl font-semibold mb-2">Total Downloads</h3>
-      <h1 className="text-3xl lg:text-4xl font-bold mb-1">29.6M </h1>
+      <h1 className="text-3xl lg:text-4xl font-bold mb-1 flex items-center gap-2">29.6M <ArrowDownToLine className="w-[35px] h-[35px]"/></h1>
       <h3 className="text-sm lg:text-base">21% more than last month</h3>
     </div>
 
     {/* Total Reviews */}
     <div className="flex flex-col items-center">
       <h3 className="text-lg lg:text-xl font-semibold mb-2">Total Reviews</h3>
-      <h1 className="text-3xl lg:text-4xl font-bold mb-1">906K</h1>
+      <h1 className="text-3xl lg:text-4xl font-bold mb-1 flex items-center gap-2">906K <Star className="w-[35px] h-[35px]"/></h1>
       <h3 className="text-sm lg:text-base">46% more than last month</h3>
     </div>
 

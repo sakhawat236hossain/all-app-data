@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 import AllAppsPageCart from "./AllAppsPageCart";
 import { Search } from "lucide-react";
 
@@ -15,6 +15,7 @@ const searchApps = removeSpach
  console.log(searchApps);
   return (
     <div>
+
 
         {/* banner */}
        
@@ -58,6 +59,23 @@ const searchApps = removeSpach
           <AllAppsPageCart key={index} cart={cart}></AllAppsPageCart>
         ))}
       </div>
+
+      {/* no app found sms  */}
+    {searchApps.length === 0 && (
+  <div className="flex flex-col items-center justify-center mt-20 gap-4 bg-gray-100 p-10 rounded-lg">
+    <h1 className="text-2xl md:text-3xl font-bold text-gray-700">
+      No Apps Found
+    </h1>
+    <Link
+      to="/all-apps-page"
+      className="btn btn-active btn-primary px-6 py-2 rounded-lg shadow-lg hover:scale-105 transition-transform duration-200"
+    >
+      Show All Apps
+    </Link>
+  </div>
+)}
+
+ 
     </div>
   );
 };

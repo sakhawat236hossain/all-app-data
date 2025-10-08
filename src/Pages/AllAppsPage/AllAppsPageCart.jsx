@@ -1,13 +1,15 @@
 import React from 'react';
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
+import { Link } from "react-router-dom";
 
 const AllAppsPageCart = ({cart}) => {
     // console.log(cart);
     const { image, title, downloads,companyName, ratingAvg } = cart;
     return (
-        <div>
-              <div
+       <Link>
+       
+        <div
                   className=" rounded-lg shadow-md p-3 bg-white 
                                 hover:shadow-xl hover:-translate-y-2 hover:scale-105 
                                 transition-transform duration-300 my-5 mx-5"
@@ -34,8 +36,7 @@ const AllAppsPageCart = ({cart}) => {
                       <h3 className="text-[#00D390] font-medium">{ratingAvg}</h3>
                     </div>
                   </div>
-                </div>
-        </div>
+                </div></Link>
     );
 };
 
