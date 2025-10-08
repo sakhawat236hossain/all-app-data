@@ -69,7 +69,7 @@ const Banner = () => {
     {/* Total Downloads */}
     <div className="flex flex-col items-center">
       <h3 className="text-lg lg:text-xl font-semibold mb-2">Total Downloads</h3>
-      <h1 className="text-3xl lg:text-4xl font-bold mb-1">29.6M</h1>
+      <h1 className="text-3xl lg:text-4xl font-bold mb-1">29.6M </h1>
       <h3 className="text-sm lg:text-base">21% more than last month</h3>
     </div>
 

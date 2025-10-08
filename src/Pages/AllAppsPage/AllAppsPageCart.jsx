@@ -3,7 +3,7 @@ import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 
 const AllAppsPageCart = ({cart}) => {
-    console.log(cart);
+    // console.log(cart);
     const { image, title, downloads,companyName, ratingAvg } = cart;
     return (
         <div>

@@ -18,6 +18,25 @@
     ]
   },
   {
+  "id": 8,
+  "image": "https://i.ibb.co.com/k6gkBMsb/images-4.png",
+  "title": "bKash",
+  "companyName": "bKash Limited",
+  "description": "bKash is Bangladesh's leading mobile financial service that allows users to send money, pay bills, recharge mobiles, and make cash-in or cash-out transactions easily from anywhere.",
+  "size": 35,
+  "reviews": 1250000,
+  "ratingAvg": 4.6,
+  "downloads": 50000000,
+  "ratings": [
+    { "name": "1 star", "count": 45000 },
+    { "name": "2 star", "count": 90000 },
+    { "name": "3 star", "count": 200000 },
+    { "name": "4 star", "count": 350000 },
+    { "name": "5 star", "count": 760000 }
+  ]
+},
+
+  {
     "id": 2,
     "image": "https://i.ibb.co.com/t7QJD0F/9882113.jpg",
     "title": "Instagram",
