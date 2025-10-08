@@ -39,7 +39,7 @@ import BannerImg from "../../assets/hero.png";
 
 const CartApp = ({ singleApp }) => {
   const { image, title, downloads,companyName, ratingAvg } = singleApp;
-  console.log(singleApp);
+  // console.log(singleApp);
 
   return (
     <div

@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const links = [
     { name: "Home", path: "/" },
-    { name: "Apps", path: "/apps" },
+    { name: "All Apps Page", path: "/All Apps Page" },
     { name: "Installation", path: "/installation" },
   ];
 

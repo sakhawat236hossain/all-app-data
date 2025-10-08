@@ -18,7 +18,7 @@ const Apps = ( {appData}) => {
 
      
       <div className="grid sm:grid-cols-1 lg:grid-cols-4 md:grid-cols-2 max-w-[1300px] mx-auto">
-        {appData.map((singleApp) => (
+        {appData.slice(0,8).map((singleApp) => (
         <CartApp singleApp={singleApp} key={singleApp.id}></CartApp>
       ))}
       </div>
