@@ -1,23 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png"; 
+import { toast, ToastContainer } from 'react-toastify';
 
 const AppDetails = () => {
     const { id } = useParams(); 
     const appId = parseInt(id);
     const appData = useLoaderData(); 
+     
 
     const singleApp = appData.find(app => app.id === appId);
     
-    console.log("id:", id);
-    console.log("App Data:", appData);
-    console.log("Single App:", singleApp);
+   
 
     
 
     const { image, title, companyName, description, size, reviews, downloads, ratings } = singleApp;
+
+// handelInstallBtn
+     const [installed, setInstalled] = useState(false);
+
+  const handleInstallBtn =()=>{
+    toast("✅ App installed successfully!")
+          setInstalled(true)
+  }
 
     return (
 
@@ -77,15 +85,25 @@ const AppDetails = () => {
     </div>
 
     {/* Install Button */}
-    <button className="bg-[#14d396] text-white font-semibold px-8 py-3 rounded-xl mt-6 hover:bg-[#00b87c] transition w-full md:w-auto shadow-sm">
-      Install Now ({size} MB)
-    </button>
+    <button
+  onClick={()=>handleInstallBtn()}
+  className={`px-8 py-3 rounded-xl font-semibold w-full md:w-auto transition
+    ${installed 
+      ? 'bg-[#00D390] text-gray-700 cursor-not-allowed pointer-events-none' 
+      : 'bg-[#00D390] hover:bg-[#00b87c] text-white'
+    }
+  `}
+>
+  {installed ? "Installed" : `Install Now (${size} MB)`}
+</button>
+
 
     {/* Description */}
     <p className="mt-4 text-gray-700 leading-relaxed text-base md:text-lg">
       {description}
     </p>
   </div>
+  <ToastContainer position="top-center" autoClose={2000} />
 </div>
 
 
