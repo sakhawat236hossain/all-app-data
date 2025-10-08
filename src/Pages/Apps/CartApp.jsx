@@ -2,15 +2,19 @@ import React from "react";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import BannerImg from "../../assets/hero.png";
+import { Link } from "react-router";
 
 
 
 const CartApp = ({ singleApp }) => {
-  const { image, title, downloads,companyName, ratingAvg } = singleApp;
+  const { image, title, downloads,companyName, ratingAvg,id } = singleApp;
   // console.log(singleApp);
 
   return (
-    <div
+ 
+
+    <Link  to={`/appDetails/${id}`}>
+       <div
       className=" rounded-lg shadow-md p-3 bg-white 
                     hover:shadow-xl hover:-translate-y-2 hover:scale-105 
                     transition-transform duration-300 my-5 mx-5"
@@ -38,6 +42,7 @@ const CartApp = ({ singleApp }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 
