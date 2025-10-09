@@ -1,26 +1,26 @@
+
 const getStoredApps = () => {
-  const storedAppsSTR = localStorage.getItem("installed");
-  if (storedAppsSTR) {
-    
-    return JSON.parse(storedAppsSTR);
-  } else {
-    return [];
-  }
+  const stored = localStorage.getItem("installed");
+  if (stored) return JSON.parse(stored);
+  return []; 
 };
 
+// localStorage তে নতুন app add করা
 const addToStoredDA = (app) => {
-  const storedAppsData = getStoredApps();
+  const storedApps = getStoredApps();
 
-
-  const isExist = storedAppsData.some((a) => a.id === app.id);
-
+  // Duplicate check
+  const isExist = storedApps.some(a => a.id === app.id);
   if (isExist) {
     alert("Already exists!");
-  } else {
-    storedAppsData.push(app);
-    localStorage.setItem("installed", JSON.stringify(storedAppsData));
-    console.log("App saved:", app);
+    return;
   }
+
+  // নতুন app push
+  storedApps.push(app);
+
+  // Save back
+  localStorage.setItem("installed", JSON.stringify(storedApps));
 };
 
 export { getStoredApps, addToStoredDA };
