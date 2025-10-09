@@ -5,7 +5,7 @@ const getStoredApps = () => {
   return []; 
 };
 
-// localStorage তে নতুন app add করা
+// localStorage 
 const addToStoredDA = (app) => {
   const storedApps = getStoredApps();
 
@@ -16,7 +16,7 @@ const addToStoredDA = (app) => {
     return;
   }
 
-  // নতুন app push
+  // app push
   storedApps.push(app);
 
   // Save back
