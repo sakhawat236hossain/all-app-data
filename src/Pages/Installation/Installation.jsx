@@ -14,7 +14,15 @@ const Installation = () => {
     }
   }, []);
 
+// Uninstall function
+const handleUninstall = (appId) => {
+    
+    const updatedApps = installation.filter(app => app.id !== appId);
+    setInstallation(updatedApps);
 
+  
+    localStorage.setItem("installed", JSON.stringify(updatedApps));
+  };
 
 
   //  sort function
@@ -65,13 +73,15 @@ const Installation = () => {
 
 </div>
 
-<div>
-      {
-      sortItemApps.map((app) => (
-  <InstallationCart key={app.id} app={app} />
-))
-    }
-</div>
+ <div>
+      {installation.map(app => (
+        <InstallationCart 
+          key={app.id} 
+          app={app} 
+          onUninstall={() => handleUninstall(app.id)}
+        />
+      ))}
+    </div>
    </div>
   );
 };

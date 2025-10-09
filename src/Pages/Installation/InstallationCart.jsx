@@ -2,8 +2,9 @@ import React from "react";
 
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
-const InstallationCart = ({ app }) => {
+const InstallationCart = ({ app, onUninstall }) => {
   console.log(app);
+  
 
   const { image, title, companyName, size, downloads, ratingAvg } = app;
   return (
@@ -49,7 +50,9 @@ const InstallationCart = ({ app }) => {
 
       {/* Button */}
       <div className="w-full md:w-auto mt-4 md:mt-0">
-        <button className="bg-[#00D390] text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition-shadow w-full md:w-auto">
+        <button 
+        onClick={ onUninstall}
+        className="bg-[#00D390] text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition-shadow w-full md:w-auto">
           Uninstall
         </button>
       </div>
