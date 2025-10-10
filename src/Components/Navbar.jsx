@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import navLogoImg from "../assets/logo.png";
 import { Github } from "lucide-react";
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
-
   const links = [
     { name: "Home", path: "/" },
     { name: "All Apps Page", path: "/all-apps-page" },
@@ -38,21 +35,22 @@ const Navbar = () => {
           {/* Mobile menu */}
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[100] mt-3 w-52 p-2 shadow"
           >
             {links.map((link) => (
               <li key={link.name}>
-                <Link
+                <NavLink
                   to={link.path}
-                  onClick={() => setActive(link.name)}
-                  className={`px-2 py-1 transition ${
-                    active === link.name
-                      ? "text-[#753DE7] border-b-2 border-[#753DE7]"
-                      : "text-black hover:text-gray-700"
-                  }`}
+                  className={({ isActive }) =>
+                    `px-2 py-1 transition ${
+                      isActive
+                        ? "text-[#753DE7] border-b-2 border-[#753DE7]"
+                        : "text-black hover:text-gray-700"
+                    }`
+                  }
                 >
                   {link.name}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -61,37 +59,38 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex gap-3 w-10 h-10 items-center">
           <img src={navLogoImg} alt="Logo" />
-          <Link
+          <NavLink
             to="/"
             className="text-xl text-[#753DE7] font-bold tracking-wide"
           >
             HERO.IO
-          </Link>
+          </NavLink>
         </div>
       </div>
 
-      {/* Navbar Center  */}
+      {/* Navbar Center */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-3">
           {links.map((link) => (
             <li key={link.name}>
-              <Link
+              <NavLink
                 to={link.path}
-                onClick={() => setActive(link.name)}
-                className={`px-2 py-1 transition ${
-                  active === link.name
-                    ? "text-[#753DE7] border-b-2 border-[#753DE7]"
-                    : "text-black hover:text-gray-700"
-                }`}
+                className={({ isActive }) =>
+                  `px-2 py-1 transition ${
+                    isActive
+                      ? "text-[#753DE7] border-b-2 border-[#753DE7]"
+                      : "text-black hover:text-gray-700"
+                  }`
+                }
               >
                 {link.name}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>
       </div>
 
-      {/* Navbar button) */}
+      {/* Navbar Button */}
       <div className="navbar-end flex items-center">
         <a
           href="https://github.com/sakhawat236hossain?tab=repositories"
