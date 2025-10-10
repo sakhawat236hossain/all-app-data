@@ -10,15 +10,15 @@ const Root = () => {
 
   useEffect(() => {
     setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 2000); 
+    const timer = setTimeout(() => setLoading(false), 1000); 
     return () => clearTimeout(timer);
-  }, [location.pathname]); 
+  }, [location]); 
 
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
 
-      {/* Spinner / Page content */}
+      {/* Spinner  */}
       <main className="flex-1">
         {loading ? <LoadingSpinner /> : <Outlet />}
       </main>
