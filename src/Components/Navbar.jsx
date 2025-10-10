@@ -1,13 +1,13 @@
 import React from "react";
 import navLogoImg from "../assets/logo.png";
-import { Github } from "lucide-react";
+import { Github, Home, AppWindow, Download } from "lucide-react"; 
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const links = [
-    { name: "Home", path: "/" },
-    { name: "All Apps Page", path: "/all-apps-page" },
-    { name: "Installation", path: "/installation" },
+    { name: "Home", path: "/", icon: <Home className="w-4 h-4" /> },
+    { name: "All Apps Page", path: "/all-apps-page", icon: <AppWindow className="w-4 h-4" /> },
+    { name: "Installation", path: "/installation", icon: <Download className="w-4 h-4" /> },
   ];
 
   return (
@@ -42,13 +42,14 @@ const Navbar = () => {
                 <NavLink
                   to={link.path}
                   className={({ isActive }) =>
-                    `px-2 py-1 transition ${
+                    `flex items-center gap-2 px-2 py-1 transition ${
                       isActive
                         ? "text-[#753DE7] border-b-2 border-[#753DE7]"
                         : "text-black hover:text-gray-700"
                     }`
                   }
                 >
+                  {link.icon}
                   {link.name}
                 </NavLink>
               </li>
@@ -76,13 +77,14 @@ const Navbar = () => {
               <NavLink
                 to={link.path}
                 className={({ isActive }) =>
-                  `px-2 py-1 transition ${
+                  `flex items-center gap-2 px-2 py-1 transition ${
                     isActive
                       ? "text-[#753DE7] border-b-2 border-[#753DE7]"
                       : "text-black hover:text-gray-700"
                   }`
                 }
               >
+                {link.icon}
                 {link.name}
               </NavLink>
             </li>
