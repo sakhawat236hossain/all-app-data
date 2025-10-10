@@ -25,19 +25,37 @@ const handleUninstall = (appId) => {
   };
 
 
-  //  sort function
-  const sortItemApps =(()=>{
-    if(sortApps ==="size-asc"){
-      return [...installation].sort((a,b)=> a.size - b.size)
-    }
-     else if(sortApps ==="size-desc"){
-      return [...installation].sort((a,b)=> b.size - a.size)
-     }
-     else{
-      return installation
-     }
+
+// Sort Function
+
+// sort function
+const sortItemApps = () => {
+  if (sortApps === "size-asc") {
+    return [...installation].sort((a, b) => a.size - b.size);
+  } else if (sortApps === "size-desc") {
+    return [...installation].sort((a, b) => b.size - a.size);
+  } else if (sortApps === "downloads-asc") {
+    return [...installation].sort((a, b) => a.downloads - b.downloads);
+  } else if (sortApps === "downloads-desc") {
+    return [...installation].sort((a, b) => b.downloads - a.downloads);
+  } else {
+    return installation;
   }
-)()
+};
+
+// const sortItemApps = () => {
+//   if (sortApps === "downloads-asc") {
+  
+//     return [...installation].sort((a, b) => a.downloads - b.downloads);
+//   } else if (sortApps === "downloads-desc") {
+   
+//     return [...installation].sort((a, b) => b.downloads - a.downloads);
+//   } else {
+//     return installation;
+//   }
+// };
+
+
 
   return (
    <div className="bg-gray-100 pt-5">
@@ -62,19 +80,31 @@ const handleUninstall = (appId) => {
   {/* sort  */}
 
 
-<label className="form-control w-full max-w-xs">
+{/* <label className="form-control w-full max-w-xs">
     <select value={sortApps} onChange={e=>setSortApps(e.target.value)} className="select select-bordered">
           <option value="none">Sort by size</option>
           <option value="size-asc">Low-&gt;Hight</option>
           <option value="size-desc">Hight-&gt;Low</option>
   </select>
-</label>
+</label> */}
+
+<select
+  value={sortApps}
+  onChange={(e) => setSortApps(e.target.value)}
+  className="select select-bordered"
+>
+  <option value="none">Sort by</option>
+  <option value="size-asc">Size: Low → High</option>
+  <option value="size-desc">Size: High → Low</option>
+  <option value="downloads-asc">Downloads: Low → High</option>
+  <option value="downloads-desc">Downloads: High → Low</option>
+</select>
 
 
 </div>
 
  <div>
-      {installation.map(app => (
+      {sortItemApps().map(app => (
         <InstallationCart 
           key={app.id} 
           app={app} 

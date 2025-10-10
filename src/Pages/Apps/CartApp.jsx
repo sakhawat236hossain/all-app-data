@@ -8,7 +8,7 @@ import { Link } from "react-router";
 
 const CartApp = ({ singleApp }) => {
   const { image, title, downloads,companyName, ratingAvg,id } = singleApp;
-  // console.log(singleApp);
+  
 
   return (
  
@@ -35,7 +35,7 @@ const CartApp = ({ singleApp }) => {
           <img className="w-4 h-4" src={downloadIcon} alt="Download" />
           <h3 className="font-medium text-[#00D390]">{downloads}</h3>
         </div>
-
+                 {/* ratingAvg */}
         <div className="bg-gray-200 flex items-center gap-2 p-2 rounded-sm">
           <img className="w-4 h-4" src={ratingIcon} alt="Rating" />
           <h3 className="text-[#00D390] font-medium">{ratingAvg}</h3>
