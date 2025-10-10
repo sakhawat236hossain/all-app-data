@@ -1,16 +1,60 @@
-# React + Vite
+# All Apps Data
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Logo](./src/assets/logo.png)
 
-Currently, two official plugins are available:
+A modern web application to explore, search, and manage applications developed by our team. Users can view app details, install/uninstall apps, sort by size or downloads, and check app ratings and reviews. Built with **React**, **Tailwind CSS**, and **daisyUI**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Tech Stack](#tech-stack)
+- [License](#license)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**All Apps Data** provides a platform to:
+
+- Browse all available apps developed by the team.
+- Search apps in real-time with a loading spinner.
+- View detailed app information including description, downloads, ratings, reviews, and size.
+- Install and uninstall apps, with state persisting in **localStorage**.
+- Sort apps based on size or downloads.
+- Track installed apps in a dedicated page.
+
+---
+
+## Features
+
+- Responsive UI with Tailwind CSS and daisyUI.
+- Dynamic search with live filtering.
+- Installed apps persistence using `localStorage`.
+- App details page with ratings bar chart using **Recharts**.
+- Toast notifications using **react-toastify**.
+- Sorting apps by size or downloads.
+- Mobile-friendly navigation with dropdown menus.
+
+---
+
+## Screenshots
+
+![Home Page](./screenshots/home.png)  
+![App Details](./screenshots/app-details.png)  
+![Installed Apps](./screenshots/installed.png)
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/all-app-data.git
+cd all-app-data

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import InstallationCart from "./installationCart";
+import { toast, ToastContainer } from "react-toastify";
+
 
 
 const Installation = () => {
@@ -16,13 +18,14 @@ const Installation = () => {
 
 // Uninstall function
 const handleUninstall = (appId) => {
-    
-    const updatedApps = installation.filter(app => app.id !== appId);
-    setInstallation(updatedApps);
-
+    toast.error("App Uninstalled Successfully ❌");
   
-    localStorage.setItem("installed", JSON.stringify(updatedApps));
-  };
+  const updatedApps = installation.filter(app => app.id !== appId);
+  setInstallation(updatedApps);
+
+  localStorage.setItem("installed", JSON.stringify(updatedApps));
+};
+
 
 
 
@@ -58,7 +61,10 @@ const sortItemApps = () => {
 
 
   return (
+    
    <div className="bg-gray-100 pt-5">
+        {/* <ToastContainet position="top-center" autoClose={2000} /> */}
+        <ToastContainer></ToastContainer>
     {/* banner */}
       <div className="text-center my-10 space-y-3">
   <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
@@ -112,6 +118,7 @@ const sortItemApps = () => {
         />
       ))}
     </div>
+
    </div>
   );
 };

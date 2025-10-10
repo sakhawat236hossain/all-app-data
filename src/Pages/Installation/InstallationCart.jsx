@@ -3,7 +3,7 @@ import React from "react";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 const InstallationCart = ({ app, onUninstall }) => {
-  console.log(app);
+
   
 
   const { image, title, companyName, size, downloads, ratingAvg } = app;

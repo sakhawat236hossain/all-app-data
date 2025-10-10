@@ -95,7 +95,7 @@ const AppDetails = () => {
         <p className="mt-4 text-gray-700 leading-relaxed text-base md:text-lg">{description}</p>
       </div>
 
-      <ToastContainer position="top-center" autoClose={2000} />
+    <ToastContainer></ToastContainer>
     </div>
   );
 };

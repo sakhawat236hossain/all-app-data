@@ -10,7 +10,7 @@ const useInstalledApps = () => {
     setLoading(true)
     axios.get("/AppData.json")
       .then(res => {
-        setInstalledApps(res.data); // array সেট করা
+        setInstalledApps(res.data); 
         setLoading(false);
       })
       .catch(err => {
@@ -19,7 +19,7 @@ const useInstalledApps = () => {
       });
   }, []);
 
-  return { installedApps, loading, error }; // 🔑 return দেওয়া জরুরি
+  return { installedApps, loading, error };
 };
 
 export default useInstalledApps;
