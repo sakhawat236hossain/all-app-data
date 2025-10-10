@@ -3,6 +3,7 @@ import navLogoImg from "../assets/logo.png";
 import { Github } from "lucide-react";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
   const [active, setActive] = useState("Home");
 

@@ -79,17 +79,17 @@ const AppDetails = () => {
           {installed ? "Installed" : `Install Now (${size} MB)`}
         </button>
                {/* bar chart */}
-        <div className="mt-6 h-64 md:h-80 p-2 rounded-xl shadow-sm mb-7">
-          <h2 className="text-xl font-semibold mb-2">Ratings</h2>
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart layout="vertical" data={ratings.slice().sort((a, b) => b.count - a.count)}>
-              <XAxis type="number" />
-              <YAxis type="category" dataKey="name" />
-              <Tooltip />
-              <Bar dataKey="count" fill="#FF8811" />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
+       <div className="mt-6 h-64 md:h-80 p-2 rounded-xl shadow-sm mb-7 bg-white">
+      <h2 className="text-xl font-semibold mb-2 text-gray-800">Ratings</h2>
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart layout="vertical" data={ratings}>
+  <XAxis type="number" />
+  <YAxis type="category" dataKey="name" />
+  <Tooltip />
+  <Bar dataKey="count" fill="#FF8811" />
+</BarChart>
+      </ResponsiveContainer>
+    </div>
 
         <h1 className="text-xl md:text-3xl font-bold text-gray-800 mb-3">Description</h1>
         <p className="mt-4 text-gray-700 leading-relaxed text-base md:text-lg">{description}</p>

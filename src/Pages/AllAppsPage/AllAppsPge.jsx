@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import AllAppsPageCart from "./AllAppsPageCart";
 import { Search } from "lucide-react";
 import useInstalledApps from "../../Hook/useInstalledApps";
+import LoadingSpinner from "../../Components/LoadingSpinner";
 
 const AllAppsPge = () => {
   // useInstalledApps hook call
@@ -14,7 +15,7 @@ const AllAppsPge = () => {
   const searchApps = removeSpach 
     ? installedApps.filter(app => app.title.toLowerCase().includes(removeSpach)) 
     : installedApps;
-      if (loading) return <p>Loading...</p>;
+      if (loading) return <LoadingSpinner></LoadingSpinner>;
   if (error) return <p>Error loading apps</p>;
 
   return (

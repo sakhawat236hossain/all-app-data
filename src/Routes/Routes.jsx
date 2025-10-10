@@ -7,6 +7,7 @@ import Home from "../Pages/Home/Home";
 import Installation from "../Pages/Installation/Installation";
 import AllAppsPge from "../Pages/AllAppsPage/AllAppsPge";
 import AppDetails from "../Pages/AppDetails/AppDetails";
+import LoadingSpinner from "../Components/LoadingSpinner";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
         path: "/appDetails/:id",
         // loader: () => fetch("/AppData.json"),
         Component: AppDetails,
+      },
+      {
+        path: "/LoadingSpinner",
+        // loader: () => fetch("/AppData.json"),
+        Component: LoadingSpinner,
       },
       
     ],
